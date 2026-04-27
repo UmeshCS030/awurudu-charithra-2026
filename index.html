@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>අවුරුදු නැකැත් සීට්ටුව - 2026</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+  <div class="app">
+
+    <!-- Header -->
+    <header class="topbar">
+      <div class="logo">
+        <img src="assets/logo.png" alt="logo">
+      </div>
+      <button id="menuBtn" class="menu-btn">&#9776;</button>
+    </header>
+
+    <!-- Side Menu -->
+    <aside id="sideMenu" class="side-menu">
+      <button id="closeBtn" class="close-btn">&times;</button>
+
+      <nav class="menu-links" id="menuLinks">
+        <!-- Event buttons added by JS -->
+      </nav>
+
+      <a href="https://forms.gle/PAvYjs7ix8WA22Jx9" target="_blank" class="feedback-btn">
+        🗨️ අදහස් දක්වන්න
+      </a>
+
+      <div class="author-slogan">© 2026 By UmesH</div>
+    </aside>
+
+    <!-- Dark Overlay -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h2 id="eventTitle" class="event-title">1st Event in,</h2>
+
+      <!-- Countdown -->
+      <div id="countdown" class="countdown">
+        <div class="time-box">
+          <span id="days">00</span>
+          <small>Days</small>
+        </div>
+        <div class="time-box">
+          <span id="hours">00</span>
+          <small>Hours</small>
+        </div>
+        <div class="time-box">
+          <span id="minutes">00</span>
+          <small>Minutes</small>
+        </div>
+        <div class="time-box">
+          <span id="seconds">00</span>
+          <small>Seconds</small>
+        </div>
+      </div>
+
+      <!-- Happening Now -->
+     <div id="happeningNow" class="happening-now hidden">
+         <span>මෙතැන් සිට...</span>
+
+        <button id="pauseSoundBtn" class="pause-sound-btn hidden" aria-label="Pause sound">
+        රතිඤ්ඤා හඬ නැවැත්වීමට
+        </button>
+    </div>
+
+    <audio id="eventSound" preload="auto" loop>
+      <source src="assets/audio/alert.mp3" type="audio/mpeg">
+    </audio>
+
+      <!-- Event Details -->
+      <section id="eventDetails" class="event-details">
+        Event details will appear here.
+      </section>
+
+      <!-- Navigation -->
+      <div class="event-nav">
+        <button id="prevBtn" class="nav-btn">&#9664;</button>
+
+        <div class="next-event-box">
+          <div id="nextEventName" class="next-event-name">2nd Event</div>
+          <div id="nextEventDate" class="next-event-date">April 14</div>
+          <div id="nextEventTime" class="next-event-time">03:00 AM</div>
+        </div>
+
+        <button id="nextBtn" class="nav-btn">&#9654;</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
