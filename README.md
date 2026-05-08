@@ -1,4 +1,4 @@
-# Awurudu Event Countdown Web App 🎉
+# Awurudu Event Countdown Web App - Sinhala 🎉
 
 A mobile-friendly web application to track Sinhala & Tamil New Year nekath events with real-time countdown and alerts.
 
